@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #112030;
+  height: 100px;
+  margin-bottom: 30px;
+}
+
+body {
+  background-color: #1d2d3c;
+}
+
+.my-card {
+  background-color: #112030;
+  color: white;
+}
+
+img {
+  width: 280px;
+  height: 280px;
+}
+
+.bold {
+  font-weight: bold;
+}

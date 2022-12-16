@@ -3,7 +3,12 @@ const { createApp } = Vue;
 createApp({
   data() {
     return {
-      message: "Hello Vue!",
+      dischi: [],
     };
+  },
+  created() {
+    axios.get("http://localhost:8888/php-dischi-json/api.php").then((res) => {
+      this.dischi = res.data;
+    });
   },
 }).mount("#app");

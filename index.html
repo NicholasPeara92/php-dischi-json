@@ -16,10 +16,24 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
-    <div id="app">{{ message }}</div>
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <div id="app">
+      <div class="container">
+        <div class="row">
+          <div v-for="disco in dischi" class="card" style="width: 18rem">
+            <img :src="disco.poster" class="card-img-top" :alt="disco.title" />
+            <div class="card-body">
+              <h2>{{disco.title}}</h2>
+              <small>{{disco.author}}</small>
+              <div>{{disco.year}}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
   </body>
 </html>

@@ -7,7 +7,7 @@ createApp({
     };
   },
   created() {
-    axios.get("http://localhost:8888/php-dischi-json/api.php").then((res) => {
+    axios.get("http://localhost/php-dischi-json//api.php").then((res) => {
       this.dischi = res.data;
     });
   },
